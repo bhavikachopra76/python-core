@@ -1,0 +1,22 @@
+{
+    "people": [
+        {
+            "name": "John",
+            "chemistry": 85,
+            "physics": 90,
+            "maths": 78
+        },
+        {
+            "name": "Jane",
+            "chemistry": 95,
+            "physics": 85,
+            "maths": 90
+        },
+        {
+            "name": "Bob",
+            "chemistry": 75,
+            "physics": 90,
+            "maths": 80
+        }
+    ]
+}
