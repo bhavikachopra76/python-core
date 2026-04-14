@@ -33,3 +33,9 @@ print(3 in s1)  # membership test (False here)
 # immutable set
 f = frozenset([1,2,3])
 print(f)  # like a set but cannot be changed
+
+# merging sets
+s3 = {1,2,3}
+s4 = {3,4,5}
+s3 |= s4
+print(s3)

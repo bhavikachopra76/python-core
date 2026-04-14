@@ -32,6 +32,8 @@ nums = [1,25,6,7]
 nums.sort()
 print(nums)  # sorts in ascending order
 
+# printing(nums.sort()) will return None
+
 nums.sort(reverse=True)
 print(nums)  # sorts in descending order
 

@@ -41,3 +41,18 @@ print(d1)
 
 # safe way to access keys (returns None if not found)
 print(my_dict.get('e'))
+
+# sorted
+tasks = {
+    "task1" : [{"duration" : 3} , {"deadline" : 5}],
+    "task2" : [{"duration" : 2} , {"deadline" : 1}],
+    "task3" : [{"duration" : 1} , {"deadline" : 3}],
+}
+# Printing w.r.t. closest deadline
+print(sorted(tasks.items() , key = lambda x : x[1][1].get("deadline")))
+
+# We can also print just a list of Tasks
+print([x[0] for x in sorted(tasks.items() , key = lambda x : x[1][1].get("deadline"))])
+
+# We can also print just a list of deadlines
+print([x[1][1].get('deadline') for x in sorted(tasks.items() , key = lambda x : x[1][1].get("deadline"))])

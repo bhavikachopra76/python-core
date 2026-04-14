@@ -15,6 +15,11 @@ print(t1)  # prints the tuple
 a,b,c = t1
 print(a,b,c)  # unpacks tuple elements into variables
 
+# extended unpacking
+t2 = (1,2,3,4,5)
+first, *middle, last = t2
+print(first, middle, last) # middle prints a list
+
 # parentheses are optional for tuples
 t = 1,2,3
 print(t)  # same as (1,2,3)
