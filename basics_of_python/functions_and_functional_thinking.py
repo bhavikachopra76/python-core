@@ -43,7 +43,6 @@ l = [1,2,3,4,5]
 squares = list(map(lambda x : x**2 , l))
 print(squares)
 
-#Higher Order Functions
 #Maps
 lst = [1,2,3,4,5]
 cube = list(map(lambda x : x**3, lst))
@@ -53,3 +52,13 @@ print(cube)
 lst2 = [1,2,3,4,5,6]
 even = list(filter(lambda x : x%2 == 0, lst2))
 print(even)
+
+#Closures
+def greet():
+    greeting = "Hello"
+    def greeting_name(name):
+        return f"{greeting} {name}"
+    return greeting_name
+
+greeter = greet()
+print(greeter("Bhavika")) #output -> Hello Bhavika

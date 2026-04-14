@@ -4,11 +4,13 @@
 # Python uses indentation (commonly 4 spaces) to define code blocks
 
 # Variable assignment
-x = 10  # 'x' is a variable (identifier) storing the integer value 10
+x = 10  # 'x' is a memory location that points to an object
+# Python is Dynamically typed we don't need to declare the type of variable, but the object it stores does have a type
 
 # Keywords are reserved words in Python and cannot be used as identifiers
 # Python has 35 keywords
 
+# Everything in python is a class
 # Basic data types in Python
 a = 5
 print(type(a))  # <class 'int'>
@@ -50,11 +52,12 @@ def func(my_name):
 
 # Accessing the function's docstring
 print(func.__doc__)
+# help(func)
 
 # Function call
 func("Bhavika")
 
-#Arithmentic Operations
+# Arithmetic Operations
 a1 = 3
 b1 = 2
 print(a1+b1)
@@ -71,3 +74,7 @@ print(round(n,2))
 
 m = -1
 print(abs(m))
+
+# Floating precision
+# Due to the way floating-point numbers are represented in binary, some decimal numbers cannot be represented exactly, leading to precision issues.
+print(round(0.1 + 0.2, 2)) #0.3

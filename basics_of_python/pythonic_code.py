@@ -9,6 +9,15 @@ print(even)
 even_squares = [x*x for x in lst if x%2 == 0]
 print(even_squares)
 
+# Nested List Comprehension
+l = [[1,2], [3,4]]
+print([[x**2 for x in sublist] for sublist in l])
+
+# Flattening List
+l2 = [[1,2], [3,4]]
+flattened = [item for sublist in l2 for item in sublist]
+print(flattened)
+
 #Dict Comprehension
 lst2 = ["apple" , "banana" , "cherry"]
 d = {w : len(w) for w in lst2}

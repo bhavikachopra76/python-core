@@ -38,14 +38,29 @@ for value in d.values():
 for key, value in d.items():
     print(key, value)
 
-#for loop with range
-l = [1,2,3,4]
-for i in range(0,3):
-    print(i)
+#types of range()
+for i in range(5):
+    print(i , end = " ")
+
+print("\n")
+
+for i in range(1,5):
+    print(i , end = " ")
+
+print("\n")
+
+for i in range(1,10,2):
+    print(i , end = " ")
+
+print("\n")
+
+for i in range(10,0,-1):
+    print(i , end = " ")
+
+print("\n")
 
 #while loop
 count = 1
 while count <= 5:
     print(count)
     count += 1
-
